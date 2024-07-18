@@ -1,10 +1,10 @@
 import React from "react";
 import { phone, logo } from "../assets";
-import { footerQlink, Resources } from "@/constants";
+import { footerQlink, Resources ,Contact_link} from "@/constants";
 import { styles } from "@/style";
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white p-8">
+    <footer className="bg-gray-800 text-white px-6 pb-4 ">
       <div className="container mx-auto w-full flex flex-wrap border-b-2  border-gray-500 pb-6 p-2 justify-between items-center">
         <div className="w-full md:w-1/3 mb-8 md:mb-0 flex items-center">
           <img
@@ -37,13 +37,19 @@ const Footer = () => {
       <div className="container w-full flex flex-wrap justify-between items-center mt-8">
         <div className="w-full md:w-1/3 mb-8 md:mb-0">
           <img src={logo} alt="HacFy Logo" className="w-9" />
-          <p className="mt-4 font-bold">
+          <p className="mt-4 font-medium">
             Cybersecurity is crucial in today's digital age, where many
             individuals and organizations store a significant amount of
             sensitive data on computers...
           </p>
+          <div className="flex gap-2  pt-5 ">
+            {Contact_link.map((link)=>(
+              <span className="p-3 bg-slate-600   duration-300 hover:bg-primarys rounded-lg " key={link.linke} ><a href={link.linke}><img src={link.img} className="" alt="" /></a></span>
+            ))}
+           
+          </div>
         </div>
-        <div className="w-full md:w-1/3 mb-8 md:mb-0">
+        <div className="w-full md:w-1/3 md:pl-36 mb-8 md:mb-0">
           <h2 className="text-xl font-bold">Contact Us</h2>
           <p>Mangalore, DK, Karnataka</p>
           <p>info.hacfy.co@gmail.com</p>
@@ -77,10 +83,11 @@ const Footer = () => {
         </div>
       </div>
       <div className="container mx-auto mt-8 text-center text-gray-500">
-        <p>
+        
+      </div>
+      <p className=" border-t-[1px] border-third pt-2  font-medium flex justify-center text-center items-center">
           © 2024 <span className="text-red-500">HacFy</span>, All Rights Reserved
         </p>
-      </div>
     </footer>
   );
 };

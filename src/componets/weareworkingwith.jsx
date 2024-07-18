@@ -17,7 +17,7 @@ const ClientSlider = () => {
   }, []);
 
   return (
-    <div className="relative w-full bg-blue-900 text-black  bg-opacity-20 bg-no-repeat bg-center  h-96 overflow-hidden flex justify-center items-center">
+    <div className="relative w-full   md:h-[36rem] bg-testimoniales bg-contain bg text-black   bg-no-repeat bg-center bg-blues  overflow-hidden flex justify-center items-center">
       <AnimatePresence>
         {clients.map((client, index) =>
           index === currentIndex ? (

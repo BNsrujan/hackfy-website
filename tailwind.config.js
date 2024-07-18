@@ -17,13 +17,16 @@ module.exports = {
       },
     },
     extend: {
-      // backgroundImage:{
-      //   "hero-pattern" : "url('/src/assets/bg2.jpg')"
-      // },
+      backgroundImage:{
+        "hero-pattern" : "url('/src/assets/bg2.jpg')",
+        "testimoniales" : "url('src/assets/testimoinals.png')",      
+        },
       colors: {
-        primary: "#0f172a00",
-        secondary:"#ed1f2400",
-        third : "#b2b2b200",
+        primarys: "rgb(237 28 36)",
+        secondarys:"#002060",
+        third : "#adb4d1",
+        // bg-opacity-20,
+        blues:"#4aa5f0",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

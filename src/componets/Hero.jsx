@@ -68,24 +68,24 @@ const Hero = () => {
               </button>
             </Link>
             {showVideo && (
-              <div className="video-overlay">
-                <div className="video-container">
-                  <button
-                    onClick={handleCloseVideo}
-                    className="font-extrabold text-1xl absolute -top-10 -right-10 border-red-800 p-3 w-7 h-7 flex justify-center items-center bg-red-500 rounded-full"
-                  >
-                    x
-                  </button>
-                  <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    title="Demo Video"
-                  ></iframe>
-                </div>
-              </div>
+             <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-75 z-50">
+             <div className="relative w-3/4 h-3/4">
+               <button
+                 onClick={handleCloseVideo}
+                 className="font-extrabold text-1xl absolute -top-5 -right-5 border-red-800 p-3 w-10 h-10 flex justify-center items-center bg-red-500 rounded-full"
+               >
+                 x
+               </button>
+               <iframe
+                 width="100%"
+                 height="100%"
+                 src="https://www.youtube.com/embed/6RDz_bV2yXs?si=WdftR-KjFaPiMFFM"
+                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                 allowFullScreen
+                 title="Demo Video"
+               ></iframe>
+             </div>
+           </div>
             )}
           </div>
         </div>

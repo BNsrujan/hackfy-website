@@ -6,6 +6,7 @@ import {
     linkdin,
     github,
     sev1,
+    Youtube,
     search,
     sev2,
     sev3
@@ -185,15 +186,15 @@ export const Card_profile = [
 
 export const Contact_link = [
     {
-        img:insta,
+        img:facebook,
         linke:"google.com"
     },
     {
-        img:insta,
+        img:linkdin,
         linke:"google.com"
     },
     {
-        img:insta,
+        img:Youtube,
         linke:"google.com"
     },
     {

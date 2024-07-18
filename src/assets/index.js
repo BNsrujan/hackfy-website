@@ -10,7 +10,8 @@ import play from './play.svg'
 import roundarrow from './roundarow.svg'
 import profile from './profile.svg'
 import calendar from './calendar.svg'
-
+import  Youtube  from "./youtube.svg"
+// import qotes from './testimonial.png'
 
 import phone from './phone.svg'
 import facebook from './facebook.svg'
@@ -29,6 +30,6 @@ import image from "./image.png"
 
 
 export  {video,logo,name,close,menu,search,message,roundarrow,play,profile,calendar,phone,facebook,github,insta
-    ,linkdin,sev1,sev2,sev3,tick,Stare,image
+    ,linkdin,sev1,sev2,sev3,tick,Stare,image,Youtube,
 
 }
