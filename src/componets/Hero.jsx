@@ -33,13 +33,13 @@ const Hero = () => {
 
   return (
     <div
-      className="pt-[40px] flex bg-cover bg-opacity-20 bg-no-repeat bg-center flex-wrap lg:h-screen"
+      className="pt-[40px] flex  sm:bg-cover lg:bg-contain    bg-opacity-20 bg-no-repeat bg-center flex-wrap lg:h-screen"
       style={{
-        // filter: currentFilter !== -1 ? filters[currentFilter] : "none",
+        filter: currentFilter !== -1 ? filters[currentFilter] : "none",
         backgroundImage: `url('/src/assets/bg2.jpg')`, 
       }}
     >
-      <div className="w-1/2 h-full text-white pl-40 flex items-center">
+      <div className="w-1/2 h-full text-white md:pl-40 flex items-center">
         <div>
           <motion.div variants={textVariant()} className="">
             <h2 className={`${styles.heroHeadText}`}>

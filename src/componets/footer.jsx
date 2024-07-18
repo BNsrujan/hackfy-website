@@ -17,7 +17,7 @@ const Footer = () => {
             <p className="text-lg">+91 8884810046</p>
           </div>
         </div>
-        <div className="w-full md:w-1/3 mb-8 md:mb-0">
+        <div className="w-full lg:w-1/3  md:w-1/2 mb-8 md:mb-0">
           <h2 className="text-xl font-bold">Join Our Newsletter</h2>
           <form className="flex">
             <input
@@ -49,7 +49,7 @@ const Footer = () => {
            
           </div>
         </div>
-        <div className="w-full md:w-1/3 md:pl-36 mb-8 md:mb-0">
+        <div className="w-full  hidden  lg:block md:w-1/3 lg:pl-24 xl:pl-36 mb-8 md:mb-0">
           <h2 className="text-xl font-bold">Contact Us</h2>
           <p>Mangalore, DK, Karnataka</p>
           <p>info.hacfy.co@gmail.com</p>
