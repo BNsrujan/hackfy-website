@@ -31,7 +31,7 @@ const ProjectCard = ({ index, name, main_img, description }) => {
             </div>
           </div>
         </div>
-        <div className=" flex w-full justify-center items-center">
+        <div className=" flex w-full lg:w-1/2 l justify-center items-center">
           <button className={`${styles.buttonred} font-semibold text-lg  px-4 py-3 max-h-16`}>
             Get Started
           </button>

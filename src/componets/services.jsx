@@ -42,7 +42,7 @@ const Services = () => {
     <>
     <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Explore Powerful Career Tracks in Cybersecurity with Hacfy</p>
-        <h2 className={styles.sectionHeadText}></h2>
+        <h2 className={styles.sectionHeadText}>HACTY offers a Wide Range of Powerful Career Tracks to build your cybersecurity Career</h2>
       </motion.div>
     <motion.div className="relative flex flex-wrap gap-7  justify-center ">
       {Services_data.map((cards, index) => (

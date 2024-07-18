@@ -20,13 +20,15 @@ export const clients = [
           "url": logo,
           "alt": "Image 1",
           "name":"srujan",
-          "comment":" "
+          "work":"cyber security",
+          "comment":" courses"
         },
         {
           "id": 2,
           "url": name,
           "alt": "Image 2",
           "name":"srujan",
+          "work":"cyber security",
           "comment":"Our courses are designed for individuals at all skill levels—from beginners wanting to start a career in cybersecurity to experienced professionals looking to enhance their skills and knowledge."
         
         },
@@ -35,6 +37,7 @@ export const clients = [
           "url": linkdin,
           "alt": "Image 3",
           "name":"srujan",
+          "work":"cyber security",
           "comment":"Our courses are designed for individuals at all skill levels—from beginners wanting to start a career in cybersecurity to experienced professionals looking to enhance their skills and knowledge."
         
         }

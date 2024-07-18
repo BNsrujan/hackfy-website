@@ -23,24 +23,24 @@ const Nav = () => {
           <img
             src={logo}
             alt="logo"
-            className="w-8 h-8 md:w-10 sm:w-14 sm:h-14 object-contain rounded-sm "
+            className=" w-10 h-10 sm:w-14 sm:h-14 object-contain rounded-sm "
           />
           <img
             src={name}
             alt="logo"
-            className=" w-20 sm:w-40 md:w-52 md:ml-6 object-contain  rounded-sm "
+            className=" w-40 sm:w-52 ml-6 object-contain  rounded-sm "
           />
           <span className="bg-black px-4"></span>
         </Link>
 
-        <ul className=" list-none  font-bold hidden sm:flex flex-row justify-center items-center gap-10">
+        <ul className="list-none  font-bold hidden sm:flex flex-row justify-center items-center gap-10">
           {navLinks.map((link) => (
             <li
               key={link.id}
               className={`${
                 active === link.title ? " text-blue-950" : "text-black"
               }
-             hover:text-black sm:text-[13px] md:text-[18px] font-medium cursor-pointer`}
+             hover:text-black text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
               <a href={`${link.id}`} className="">

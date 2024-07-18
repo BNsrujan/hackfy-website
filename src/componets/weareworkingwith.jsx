@@ -34,9 +34,8 @@ const ClientSlider = () => {
               className='h-8'
                alt=""
                 />
-              <h1 className="text-2xl  font-semibold mb-2">{client.name}</h1>
               <p className="text-lg mb-4">"{client.comment}."</p>
-              <motion.img
+              <motion.div className='flex '><motion.img
                 src={client.url}
                 alt={client.alt}
                 className="w-20 h-20 rounded-full border-red-700 object-cover"
@@ -45,7 +44,13 @@ const ClientSlider = () => {
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.5 }}
               />
+              <div className='m-3 text-start  '>
+              <h1 className="text-2xl  font-semibold ">{client.name}</h1>
+              <p className='text-lg text-slate-800'> {client.work}</p>
+              </div>
+              </motion.div>
             </motion.div>
+            
           ) : null
         )}
       </AnimatePresence>
