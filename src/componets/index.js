@@ -15,5 +15,6 @@ import Contact from './Contact'
 import RegistrationPage from './register'
 import MouseFollow from './mouseFollower'
 import PageNotFound from './PageNotFound'
+import ResetPassword from './resetpassword'
 
-export {About,Hero,Nav,FAQs,Footer,Number,Team,Project,Wedo,Services,ClientSlider,Path,LoginPage,Contact,RegistrationPage,PageNotFound,MouseFollow} 
+export {About,Hero,Nav,FAQs,Footer,Number,Team,Project,Wedo,Services,ClientSlider,Path,LoginPage,Contact,RegistrationPage,PageNotFound,MouseFollow,ResetPassword} 

@@ -23,12 +23,12 @@ const Nav = () => {
           <img
             src={logo}
             alt="logo"
-            className=" w-10 h-10 sm:w-14 sm:h-14 object-contain rounded-sm "
+            className=" w-7 h-7 xs:w-10 xs:h-10 sm:w-14 sm:h-14 object-contain rounded-sm "
           />
           <img
             src={name}
             alt="logo"
-            className=" w-40 sm:w-52 ml-6 object-contain  rounded-sm "
+            className=" w-32 xs:w-40 sm:w-52 sm:ml-6 object-contain  rounded-sm "
           />
           <span className="bg-black px-4"></span>
         </Link>
@@ -51,11 +51,9 @@ const Nav = () => {
 
           <li>
             <Link to="/login">
-              <button
-                className={`${styles.buttonred}font-semibold text-lg px-4 py-3`}
-              >
-                Log IN
-              </button>
+            <button class="px-4 py-2 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-medium sm:font-semibold md:font-bold lg:font-extrabold border border-transparent bg-blue-500 hover:bg-blue-600 text-white rounded-md">
+        Login
+      </button>
             </Link>
           </li>
         </ul>
@@ -94,7 +92,7 @@ const Nav = () => {
           </div>
           <Link to="/login">
             <button
-              className={`${styles.buttonred}font-semibold text-lg px-4 py-3`}
+              className={`${styles.buttonred}font-semibold text-sm md:text-lg px-3 py-2 sm:px-4 sm:py-33`}
             >
               Log IN
             </button>

@@ -3,8 +3,8 @@ const styles = {
   paddingY: 'sm:py-16 py-6',
   padding: 'sm:px-16 px-6 md:py-16 py-4',
 
-  heroHeadText: 'lg:font-bold  uppercase font-block text-white lg:text-[50px] md:text-[30px] sm:text-[20px] xs:text-[60px] text-[40px]  lg:leading-[70px] mt-2',
-  heroSubText: 'text-[#dfd9ff] font-medium lg:text-[20px] sm:text-[16px] xs:text-[20px] text-[16px] lg:leading-[40px]',
+  heroHeadText: 'lg:font-bold  uppercase font-block text-white lg:text-[50px] md:text-[30px] sm:text-[20px] xs:text-[60px] text-[20px] xs:leading-[50px]  lg:leading-[70px] mt-2',
+  heroSubText: 'text-[#dfd9ff] font-medium lg:text-[20px] sm:text-[16px] xs:text-[20px] text-[10px] lg:leading-[40px]',
 
   buttonHead:"px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-md shadow-md  transition duration-300 ease-in-out  md:px-5 md:py-3",
   buttonNav:"w-40 px-2 py-4  border-red-500 border-2 shadows shadow-red-500 hover:bg-red-500 duration-200 text-red-600 rounded-lg font-bold",

@@ -33,13 +33,13 @@ const Hero = () => {
 
   return (
     <div
-      className="pt-[40px] flex  sm:bg-cover lg:bg-contain    bg-opacity-20 bg-no-repeat bg-center flex-wrap lg:h-screen"
+      className=" pt-[60px] md:pt-[40px] flex bg-contain  sm:bg-cover lg:bg-contain    bg-opacity-20 bg-no-repeat bg-center flex-wrap lg:h-screen"
       style={{
         filter: currentFilter !== -1 ? filters[currentFilter] : "none",
         backgroundImage: `url('/src/assets/bg2.jpg')`, 
       }}
     >
-      <div className="w-1/2 h-full text-white md:pl-40 flex items-center">
+      <div className="w-3/4  md:w-1/2 h-full text-white pl-20 md:pl-40 flex items-center">
         <div>
           <motion.div variants={textVariant()} className="">
             <h2 className={`${styles.heroHeadText}`}>
@@ -50,9 +50,9 @@ const Hero = () => {
               paramount. With the rapid expansion of online activities,
             </p>
           </motion.div>
-          <div className="flex gap-8 pt-5">
+          <div className="flex gap-8 pt-2 md:pt-5">
             <button
-              className={`${styles.buttonred} font-semibold text-lg px-4 py-3`}
+              className={`${styles.buttonred} font-medium md:font-semibold md:text-lg   mb-4 px-4 py-3`}
               onClick={handleButtonClick}
               onMouseEnter={() => handleHover(1)} // Apply filter on hover
               onMouseLeave={handleMouseLeave} // Reset filter on leave
@@ -60,7 +60,7 @@ const Hero = () => {
               Watch the Video
             </button>
 
-            <Link to="/demo">
+            <Link to="/demo" className="md:block hidden">
               <button
                 className={`${styles.buttonred} font-semibold text-lg px-4 py-3`}
               >
@@ -90,7 +90,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="w-1/2 h-full pr-40"></div>
+      {/* <div className="w-1/2 h-full pr-40"></div> */}
     </div>
   );
 };

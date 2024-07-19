@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-const LoginPage = () => {
+const ResetPassword = () => {
   return (
     <motion.div
     initial={{ opacity: 0, y: 50 }}
@@ -12,12 +12,12 @@ const LoginPage = () => {
       <div className="bg-gray-900 p-8 rounded-lg shadow-md w-full max-w-md">
         <div className="text-center mb-6">
           <img src="logo.png" alt="Phylum" className="mx-auto h-12 w-auto" />
-          <h2 className="mt-6 text-3xl font-extrabold text-white">Sign in</h2>
+          <h2 className="mt-6 text-3xl font-extrabold text-white">Reset your Password</h2>
         </div>
         <form className="space-y-6">
           <div className=" shadow-sm -space-y-px ">
             <div className='rounded-lg '>
-              <label htmlFor="email-address" className="sr-only">Email address</label>
+              <label htmlFor="email-address" className="sr-only">new-password</label>
               <input
                 id="email-address"
                 name="email"
@@ -25,7 +25,7 @@ const LoginPage = () => {
                 autoComplete="email"
                 required
                 className=" rounded-sm appearance-none  relative block w-full px-4 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
-                placeholder="Email address"
+                placeholder="new-password"
               />
             </div>
             <div className='pt-6'>
@@ -37,43 +37,31 @@ const LoginPage = () => {
                 autoComplete="current-password"
                 required
                 className="appearance-none rounded-sm  relative block w-full px-4 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
-                placeholder="Password"
+                placeholder="Conferm-Password"
               />
             </div>
           </div>
 
           <div className="flex items-center justify-between">
             <div className="flex items-center">
-              <input
-                id="remember-me"
-                name="remember-me"
-                type="checkbox"
-                className="h-4 w-4 text- focus:ring-indigo-500 border-gray-300 rounded"
-              />
-              <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-200">
-                Remember me
-              </label>
+          <p className="mt-1 text-sm text-gray-400">Created for developers by developers</p>
             </div>
 
-            <div className="text-sm">
-              <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
-                Forgot your password?
-              </a>
-            </div>
+            
           </div>
 
           <div>
             <button
               type="submit"
-              className="group relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              className="group ca relative w-full flex justify-center py-3 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
-              Sign in
+              Reset The Password
             </button>
           </div>
         </form>
         <div className="text-center mt-6">
           <Link href="/signup" className="font-medium text-indigo-600 hover:text-indigo-500">
-            Sign up
+            Log in
           </Link>
         </div>
       </div>
@@ -81,5 +69,5 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default ResetPassword;
 

@@ -14,25 +14,17 @@ const ProjectCardes = ({
 const Navigate = useNavigate();
 
   return (
-    <motion.div  variants={fadeIn('up', 'spring', index * 1/6, 1.6)}className="p-5  w-96 relative h-89 rounded-lg   
-    border border-slate-200   
-    hover:shadow-md hover:scale-50   hover:scale-300  hover:transition hover:duration-300 hover:ease-in-out  ">
-      <div className="   items-center">
-        <span className="   w-full h-32 overflow-hidden rounded-lg flex justify-center items-center bg-white">
-          <img src={main_img} />
-        </span>
-        <span className="pl-4">
-          <p>A career in</p>
-          <h1 className=" font-bold  text-2xl"> {name}</h1>
-          
-        </span>
-      </div>
-      <div className="pt-4 leading-5  text-white font-normal text-lg pb-7">
-        <p>{description}</p>
-      </div>
+    
 
-      
-     <a href="/servies" className=' absolute bottom-4 left-6 text-xl  hover:text-zinc-300 hover:underline'>read me</a>
+    <motion.div variants={fadeIn('up', 'spring', index * 1/6, 1.6)} class="max-w-sm mx-auto bg-gray-900 shadow-md rounded-lg overflow-hidden hover:shadow-blue-900 duration-300">
+      <img class="w-full h-48 object-cover" src={main_img}  alt="Card Image"/>
+      <div class="p-4">
+        <h2 class="text-xl font-semibold mb-2">{name}</h2>
+        <p class="text-gray-200 mb-4">{description}</p>
+        <button class="px-4 py-2 text-sm sm:text-base md:text-lg font-medium border border-gray-800 bg-blue-500 hover:bg-blue-600 text-white rounded-md">
+          read more 
+        </button>
+      </div>
     </motion.div>
   );
 };
