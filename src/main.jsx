@@ -42,8 +42,7 @@ import {
           <FAQs />
           <Number />
           <ClientSlider/>
-          <Contact/>
-          <ResetPassword/>
+          
       <Footer />
 
         </>
