@@ -16,7 +16,7 @@ const Navigate = useNavigate();
   return (
     
 
-    <motion.div variants={fadeIn('up', 'spring', index * 1/6, 1.6)} className= "max-w-sm mx-auto   shadow-md   rounded-lg overflow-hidden bg-gradient-to-br from-red-200 to-red-600  duration-300">
+    <motion.div variants={fadeIn('up', 'spring', index * 1/6, 1.6)} className= "max-w-sm mx-auto   shadow-md   rounded-lg overflow-hidden bg-gradient-to-br from-blue-950  to-black  duration-300">
       <img className= "w-full h-48 object-cover" src={main_img}  alt="Card Image"/>
       <div className= "p-4">
         <h2 className= "text-xl font-semibold mb-2">{name}</h2>

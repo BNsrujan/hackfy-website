@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { textVariant } from "@/utils/motion";
-import { styles } from "@/style";
+import { heroHeadTextStyles, heroSubTextStyles, sectionHeadTextStyles, sectionSubTextStyles, styles } from "@/style";
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 
@@ -17,18 +17,18 @@ const Hero = () => {
 
   return (
     <div
-      className="pt-28 md:pt-40 flex bg-contain sm:bg-cover lg:bg-cover bg-opacity-20 bg-no-repeat bg-center flex-wrap lg:h-screen"
+      className=" pt-4  sm:pt-28 md:pt-40 flex bg-auto sm:bg-cover lg:bg-cover bg-opacity-20 bg-no-repeat bg-center flex-wrap lg:h-screen"
       style={{
         backgroundImage: `url('/src/assets/bg2.jpg')`,
       }}
     >
-      <div className="w-3/5 md:w-3/4 lg:w-1/2 h-full text-white px-6 md:px-20 lg:px-40 flex items-center">
+      <div className=" md:w-3/4 lg:w-1/2 h-full text-white  px-6  md:px-20 lg:px-40 flex items-center">
         <div>
           <motion.div variants={textVariant()} className="">
-            <h2 className="text-2xl md:text-4xl lg:text-7xl font-bold leading-tight">
+            <h3 className={`${heroHeadTextStyles.heroHeadText } mt-9  sm:m-auto`}>
               Essential Policy for Cybersecurity Protection.
-            </h2>
-            <p className="mt-3 text-sm md:text-base lg:text-2xl">
+            </h3>
+            <p className={`${sectionSubTextStyles}`}>
               In today's increasingly digital world, cybersecurity has become paramount. With the rapid expansion of online activities,
             </p>
           </motion.div>

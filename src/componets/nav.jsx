@@ -51,7 +51,7 @@ const Nav = () => {
 
           <li>
             <Link to="/login">
-              <button className="px-3 py-2 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl font-medium sm:font-semibold md:font-bold lg:font-extrabold border border-transparent bg-red-600 hover:bg-red-700 text-white rounded-md">
+              <button className="px-3 py-2 text-sm sm:text-base md:text-lg lg:text-base xl:text-base font-medium sm:font-semibold md:font-semibold lg:font-bold border border-transparent bg-red-600 hover:bg-red-700 text-white rounded-md">
                 Login
               </button>
             </Link>
@@ -98,7 +98,7 @@ const Nav = () => {
           </AnimatePresence>
         </div>
         <Link to="/login " className="sm:hidden  h-full flex  justify-center items-center">
-          <button className="mt-4 px-3 py-2 text-sm md:text-base font-semibold bg-red-500 hover:bg-blue-600 text-white rounded-md">
+          <button className="sm:mt-4 px-3 py-2 text-sm md:text-base  font-medium bg-red-500 hover:bg-blue-600 text-white rounded-md">
             Log In
           </button>
         </Link>

@@ -17,6 +17,12 @@ const styles = {
   sectionSubText: 'sm:text-[18px] text-[12px] text-secondary uppercase tracking-wider'
 }
 
+const heroHeadTextStyles = { heroHeadText :'text-3xl font-bold mb-4 sm:text-3xl md:text-6xl lg:text-5xl xl:text-6xl 2xl:text-8xl'};
+const heroSubTextStyles = 'text-lg font-medium sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl';
+const sectionHeadTextStyles = 'text-2xl font-semibold mb-4 sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl';
+const sectionSubTextStyles = 'text-base font-normal sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl';
+
+export { heroHeadTextStyles, heroSubTextStyles, sectionHeadTextStyles, sectionSubTextStyles };
 
 
 

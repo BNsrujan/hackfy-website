@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import App from './App.jsx';
 import './index.scss';
-// import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import {
@@ -41,7 +39,7 @@ import {
           <FAQs />
           <Number />
           <ClientSlider/>
-          <InteractiveGradient/>
+          {/* <InteractiveGradient/> */}
       <Footer />
 
         </>
