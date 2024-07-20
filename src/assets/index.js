@@ -21,11 +21,12 @@ import sev3 from './sev3.png'
 
 import tick from './tick.svg'
 
-import Stare from './3D-stare.png'
-import image from "./image.png"
+import Stare from './G.png'
+import image from "./image.webp"
+import arrow from './arrow.svg'
 
 
 export  {logo,phone,play,roundarrow,profile,Youtube,facebook,github,image
-    ,insta,linkdin,search,sev1,sev2,sev3,tick,Stare,name,close,menu,message
+    ,insta,linkdin,search,sev1,sev2,sev3,tick,Stare,name,close,menu,message,arrow
 }
 

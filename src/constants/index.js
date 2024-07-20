@@ -267,7 +267,7 @@ export const  Resources =[
     },
     {
         id:"privacy&policy",
-        title:"Privacy&policy"
+        title:"Privacy & policy"
     },
     {
         id:"Terms&conditions",

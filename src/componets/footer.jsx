@@ -14,7 +14,7 @@ const Footer = () => {
           />
           <div>
             <h2 className="text-xl font-bold">Give Us A Call</h2>
-            <p className="text-lg">+91 8884810046</p>
+            <p className="text-lg">+91 8660767853</p>
           </div>
         </div>
         <div className="w-full lg:w-1/3  md:w-1/2 mb-8 md:mb-0">
@@ -86,7 +86,7 @@ const Footer = () => {
         
       </div>
       <p className=" border-t-[1px] border-third pt-2  font-medium flex justify-center text-center items-center">
-          © 2024 <span className="text-red-500">HacFy</span>, All Rights Reserved
+          © 2024  <span className="text-red-500 pl-2"> HacFy</span>, All Rights Reserved
         </p>
     </footer>
   );

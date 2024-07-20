@@ -83,7 +83,7 @@ const Nav = () => {
                         active === link.title
                           ? "bg-black text-white"
                           : "text-blue-950"
-                      } font-medium cursor-pointer text-base`}
+                      } font-medium  text-base`}
                       onClick={() => {
                         setToggle(!toggle);
                         setActive(link.title);
@@ -97,7 +97,7 @@ const Nav = () => {
             )}
           </AnimatePresence>
         </div>
-        <Link to="/login " className="sm:hidden  h-full flex  justify-center items-center">
+        <Link to="/login" className="sm:hidden  h-full flex  justify-center items-center">
           <button className="sm:mt-4 px-3 py-2 text-sm md:text-base  font-medium bg-red-500 hover:bg-blue-600 text-white rounded-md">
             Log In
           </button>

@@ -17,19 +17,19 @@ const Hero = () => {
 
   return (
     <div
-      className=" pt-4  sm:pt-28 md:pt-40 flex bg-auto sm:bg-cover lg:bg-cover bg-opacity-20 bg-no-repeat bg-center flex-wrap lg:h-screen"
+      className=" pt-4  sm:pt-28 md:pt-40 flex bg-auto sm:bg-contain lg:bg-cover bg-opacity-20 bg-no-repeat bg-center flex-wrap lg:h-screen"
       style={{
         backgroundImage: `url('/src/assets/bg2.jpg')`,
       }}
     >
-      <div className=" md:w-3/4 lg:w-1/2 h-full text-white  px-6  md:px-20 lg:px-40 flex items-center">
+      <div className=" md:w-3/4 lg:w-1/2 h-full text-white  px-6 md:px-20 lg:px-40 flex items-center">
         <div>
           <motion.div variants={textVariant()} className="">
-            <h3 className={`${heroHeadTextStyles.heroHeadText } mt-9  sm:m-auto`}>
-              Essential Policy for Cybersecurity Protection.
+            <h3 className={`${styles.heroHeadText} mt-11  sm:m-auto`}>
+              Empowering cybersecurity Education .
             </h3>
-            <p className={`${sectionSubTextStyles}`}>
-              In today's increasingly digital world, cybersecurity has become paramount. With the rapid expansion of online activities,
+            <p className={`${styles.heroSubText}`}>
+              Empowering Your Digital Defense with Comprehensive Cybersecurity Education.Our Courses cover everything from the basics to advanced strategies,ensuring your're well-equipped to protect the digital world.
             </p>
           </motion.div>
           <div className="flex flex-col md:flex-row gap-4 md:gap-8 pt-4 pb-5 md:pt-5">

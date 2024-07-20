@@ -17,7 +17,6 @@ const ProjectCard = ({ index, name, main_img, description }) => {
       initial="initial"
       whileHover="hover"
       className="md:p-5 py-5 relative text-lg rounded-lg border border-zinc-500"
-      onClick={() => navigate(`/project/${index}`)}
     >
       <div className="lg:flex  items-center lg:space-y-4">
         <div className="lg:flex  flex-wrap">
@@ -32,7 +31,10 @@ const ProjectCard = ({ index, name, main_img, description }) => {
           </div>
         </div>
         <div className=" flex w-full lg:w-1/2 l justify-center items-center">
-          <button className={`${styles.buttonred} font-semibold text-lg  px-4 py-3 max-h-16`}>
+          <button
+      onClick={() => navigate(`/project/${index}`)}
+          className={`${styles.buttonred}
+           font-semibold text-lg  px-4 py-3 max-h-16`}>
             Get Started
           </button>
         </div>

@@ -12,9 +12,9 @@ function About() {
       <div className='w-full grid lg:grid-cols-2'>
         <motion.div
           variants={textVariants(-10, 1)}
-          className='order-first lg:order-last w-full h-full'
+          className='order-first lg:order-last w-full h-full '
         >
-          <img src={image} alt="" className="w-full h-auto" />
+          <img src={image} alt="" className="w-full h-auto  rounded-xl" />
         </motion.div>
         <div className="w-full py-5 md:py-0 px-3 flex flex-wrap lg:order-first">
           <motion.div initial="hidden" animate="show" className='-my-3'>
