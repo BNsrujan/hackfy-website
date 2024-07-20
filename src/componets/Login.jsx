@@ -1,22 +1,40 @@
-// src/SignIn.js
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+
 const LoginPage = () => {
+  // State variables for email and password
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  
+  // Handle input changes
+  const handleEmailChange = (e) => setEmail(e.target.value);
+  const handlePasswordChange = (e) => setPassword(e.target.value);
+  
+  // Handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle login logic here
+    console.log('Email:', email);
+    console.log('Password:', password);
+    // You can make an API call here to authenticate the user
+  };
+
   return (
     <motion.div
-    initial={{ opacity: 0, y: 50 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.5 }}
-     className="min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-gray-900 to-gray-800">
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-gray-900 to-gray-800"
+    >
       <div className="bg-gray-900 p-8 rounded-lg shadow-md w-full max-w-md">
         <div className="text-center mb-6">
           <img src="logo.png" alt="Phylum" className="mx-auto h-12 w-auto" />
           <h2 className="mt-6 text-3xl font-extrabold text-white">Sign in</h2>
         </div>
-        <form className="space-y-6">
-          <div className=" shadow-sm -space-y-px ">
-            <div className='rounded-lg '>
+        <form onSubmit={handleSubmit} className="space-y-6">
+          <div className="shadow-sm -space-y-px">
+            <div className='rounded-lg'>
               <label htmlFor="email-address" className="sr-only">Email address</label>
               <input
                 id="email-address"
@@ -24,7 +42,9 @@ const LoginPage = () => {
                 type="email"
                 autoComplete="email"
                 required
-                className=" rounded-sm appearance-none  relative block w-full px-4 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                value={email}
+                onChange={handleEmailChange}
+                className="rounded-sm appearance-none relative block w-full px-4 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                 placeholder="Email address"
               />
             </div>
@@ -36,7 +56,9 @@ const LoginPage = () => {
                 type="password"
                 autoComplete="current-password"
                 required
-                className="appearance-none rounded-sm  relative block w-full px-4 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                value={password}
+                onChange={handlePasswordChange}
+                className="appearance-none rounded-sm relative block w-full px-4 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                 placeholder="Password"
               />
             </div>
@@ -48,18 +70,16 @@ const LoginPage = () => {
                 id="remember-me"
                 name="remember-me"
                 type="checkbox"
-                className="h-4 w-4 text- focus:ring-indigo-500 border-gray-300 rounded"
+                className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded"
               />
               <label htmlFor="remember-me" className="ml-2 block text-sm text-gray-200">
                 Remember me
               </label>
             </div>
 
-            <div className="text-sm">
-              <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
-                Forgot your password?
-              </a>
-            </div>
+            <Link to="/Rpass" className="font-medium text-sm text-indigo-600 hover:text-indigo-500">
+              Forgot your password?
+            </Link>
           </div>
 
           <div>
@@ -72,7 +92,7 @@ const LoginPage = () => {
           </div>
         </form>
         <div className="text-center mt-6">
-          <Link href="/signup" className="font-medium text-indigo-600 hover:text-indigo-500">
+          <Link to="/signup" className="font-medium text-indigo-600 hover:text-indigo-500">
             Sign up
           </Link>
         </div>
@@ -82,4 +102,3 @@ const LoginPage = () => {
 };
 
 export default LoginPage;
-

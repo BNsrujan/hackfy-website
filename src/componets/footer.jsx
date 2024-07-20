@@ -44,7 +44,7 @@ const Footer = () => {
           </p>
           <div className="flex gap-2  pt-5 ">
             {Contact_link.map((link)=>(
-              <span className="p-3 bg-slate-600   duration-300 hover:bg-primarys rounded-lg " key={link.linke} ><a href={link.linke}><img src={link.img} className="" alt="" /></a></span>
+              <span className="p-3 bg-slate-600   duration-300 hover:bg-primarys rounded-lg " key={link.linke} ><a href={link.linke } target="_black"><img src={link.img} className="" alt={link.linke}   /></a></span>
             ))}
            
           </div>
@@ -61,7 +61,7 @@ const Footer = () => {
             <ul className="mt-4">
               {footerQlink.map((link) => (
                 <li key={link.id}>
-                  <a href="#about" className="text-gray-400 hover:text-white">
+                  <a href={link.id} className="text-gray-400 hover:text-white">
                     {link.title}
                   </a>
                 </li>
@@ -73,7 +73,7 @@ const Footer = () => {
             <ul className="mt-4">
               {Resources.map((link) => (
                 <li key={link.id}>
-                  <a href="#about" className="text-gray-400 hover:text-white">
+                  <a href={link.id} className="text-gray-400 hover:text-white">
                     {link.title}
                   </a>
                 </li>

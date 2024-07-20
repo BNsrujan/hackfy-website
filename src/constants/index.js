@@ -14,37 +14,35 @@ import {
 
 
 export const clients = [
-    
-        {
-          "id": 1,
-          "url": logo,
-          "alt": "Image 1",
-          "name":"srujan",
-          "work":"cyber security",
-          "comment":" courses"
-        },
-        {
-          "id": 2,
-          "url": name,
-          "alt": "Image 2",
-          "name":"srujan",
-          "work":"cyber security",
-          "comment":"Our courses are designed for individuals at all skill levels—from beginners wanting to start a career in cybersecurity to experienced professionals looking to enhance their skills and knowledge."
-        
-        },
-        {
-          "id": 3,
-          "url": linkdin,
-          "alt": "Image 3",
-          "name":"srujan",
-          "work":"cyber security",
-          "comment":"Our courses are designed for individuals at all skill levels—from beginners wanting to start a career in cybersecurity to experienced professionals looking to enhance their skills and knowledge."
-        
-        }
-    
-    
-    
+    {
+      id: 1,
+      url: "https://randomuser.me/api/portraits/women/4.jpg",
+      alt: "Image 1",
+      name: "Srujan",
+      work: "Cyber Security Specialist",
+      testimonial: "The training provided was top-notch and helped me gain essential skills in cybersecurity. Highly recommend!"
+    },
+    {
+      id: 2,
+      url: "https://randomuser.me/api/portraits/men/5.jpg",
+      alt: "Image 2",
+      name: "John Doe",
+      work: "Security Analyst",
+      testimonial: "An excellent program that covered all the key areas of cybersecurity. The practical exercises were very useful."
+    },
+    {
+      id: 3,
+      url: "https://randomuser.me/api/portraits/women/9.jpg",
+      alt: "Image 3",
+      name: "Jane Smith",
+      work: "Network Security Engineer",
+      testimonial: "The course was well-structured, and the instructors were knowledgeable. I feel more confident in my cybersecurity skills now."
+    }
   ];
+  
+    
+    
+  
 
 
   export const images = [
@@ -187,22 +185,27 @@ export const Card_profile = [
     }
 ]
 
+
+
+
+
+
 export const Contact_link = [
     {
         img:facebook,
-        linke:"google.com"
+        linke:"https://www.facebook.com/profile.php?id=61562353171045 "
     },
     {
         img:linkdin,
-        linke:"google.com"
+        linke:"https://www.linkedin.com/company/hacfy"
     },
     {
         img:Youtube,
-        linke:"google.com"
+        linke:"https://www.youtube.com/@HacFy"
     },
     {
         img:insta,
-        linke:"https://boxicons.com/?query=face"
+        linke:"https://www.instagram.com/hacfy.co/"
     }
 ]
 

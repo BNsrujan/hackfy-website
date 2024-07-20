@@ -1,4 +1,3 @@
-import video from "./video.mp4"
 import logo from "./logo.png"
 import name from "./HACFY.png"
 import close from "./close.svg"
@@ -9,10 +8,7 @@ import message from './message.svg'
 import play from './play.svg'
 import roundarrow from './roundarow.svg'
 import profile from './profile.svg'
-import calendar from './calendar.svg'
 import  Youtube  from "./youtube.svg"
-// import qotes from './testimonial.png'
-
 import phone from './phone.svg'
 import facebook from './facebook.svg'
 import github from "./github.svg"
@@ -29,7 +25,7 @@ import Stare from './3D-stare.png'
 import image from "./image.png"
 
 
-export  {video,logo,name,close,menu,search,message,roundarrow,play,profile,calendar,phone,facebook,github,insta
-    ,linkdin,sev1,sev2,sev3,tick,Stare,image,Youtube,
-
+export  {logo,phone,play,roundarrow,profile,Youtube,facebook,github,image
+    ,insta,linkdin,search,sev1,sev2,sev3,tick,Stare,name,close,menu,message
 }
+
