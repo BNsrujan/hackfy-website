@@ -22,10 +22,10 @@ const Hero = () => {
         backgroundImage: `url('/src/assets/bg2.jpg')`,
       }}
     >
-      <div className=" md:w-3/4 lg:w-1/2 h-full text-white  px-6 md:px-20 lg:px-40 flex items-center">
+      <div className=" md:w-3/4 lg:w-1/2 h-full text-white  px-6  md:px-20 lg:px-40 flex items-center">
         <div>
           <motion.div variants={textVariant()} className="">
-            <h3 className={`${styles.heroHeadText} mt-11  sm:m-auto`}>
+            <h3 className={`${styles.heroHeadText} mt-20  sm:m-auto`}>
               Empowering cybersecurity Education .
             </h3>
             <p className={`${styles.heroSubText}`}>
@@ -34,7 +34,7 @@ const Hero = () => {
           </motion.div>
           <div className="flex flex-col md:flex-row gap-4 md:gap-8 pt-4 pb-5 md:pt-5">
             <button
-              className="bg-red-600 hover:bg-red-700 text-white w-56 md:w-auto font-medium md:font-semibold md:text-lg px-4 py-3 rounded-lg"
+              className="bg-red-600 hover:bg-red-700 text-white w-40 text-sm md:w-auto font-medium md:font-semibold md:text-lg px-4 py-3 rounded-lg"
               onClick={handleButtonClick}
             >
               Watch the Video
@@ -42,7 +42,7 @@ const Hero = () => {
 
             <Link to="/demo" className="md:block">
               <button
-                className="bg-red-600 hidden md:block hover:bg-red-700 text-white font-semibold text-lg px-4 py-3 rounded-lg"
+                className="bg-red-600 hidden  md:block hover:bg-red-700 text-white font-semibold text-lg px-4 py-3 rounded-lg"
               >
                 Request A Demo
               </button>

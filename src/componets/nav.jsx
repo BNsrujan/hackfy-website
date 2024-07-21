@@ -45,7 +45,7 @@ const Nav = () => {
               } hover:text-black text-sm md:text-base lg:text-lg font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
-              <a href={`#${link.id}`}>{link.title}</a>
+              <a href={`${link.id}`}>{link.title}</a>
             </li>
           ))}
 
@@ -73,15 +73,15 @@ const Nav = () => {
                 exit="hidden"
                 variants={menuVariants}
                 transition={{ duration: 0.3 }}
-                className="p-6 absolute top-16 left-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl bg-white shadow-lg"
+                className="p-6 absolute top-16 left-0 mx-2 my-2 min-w-[140px] z-10 rounded-xl bg-white shadow-lg"
               >
-                <ul className="list-none flex justify-end items-start flex-col gap-4">
+                <ul className="list-none flex justify-end items-start flex-col gap-2 ">
                   {navLinks.map((link) => (
                     <li
                       key={link.id}
                       className={`${
                         active === link.title
-                          ? "bg-black text-white"
+                          ? "text-blue-900"
                           : "text-blue-950"
                       } font-medium  text-base`}
                       onClick={() => {
@@ -89,7 +89,8 @@ const Nav = () => {
                         setActive(link.title);
                       }}
                     >
-                      <a href={`#${link.id}`}>{link.title}</a>
+                      
+                      <a href={`${link.id}`} className="  ">{link.title}</a>
                     </li>
                   ))}
                 </ul>

@@ -2,7 +2,7 @@ import { SectionWrapper } from '@/hoc'
 import { Services_data } from "../constants";
 import { motion } from "framer-motion";
 import { fadeIn,textVariant } from "../utils/motion";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { styles } from '@/style';
 
 const ProjectCardes = ({
@@ -21,9 +21,11 @@ const Navigate = useNavigate();
       <div className= "p-4">
         <h2 className= "text-xl font-semibold mb-2">{name}</h2>
         <p className= "text-gray-200 mb-4">{description}</p>
+        <Link to='/career'>
         <button className= "px-4 py-2 text-sm sm:text-base md:text-lg font-medium border border-gray-800 bg-red-500 hover:bg-red-600 text-white rounded-md">
           read more 
         </button>
+        </Link>
       </div>
     </motion.div>
   );
@@ -43,4 +45,4 @@ const Services = () => {
     </motion.div>
     </>
   );}
-export default SectionWrapper(Services,"")
+export default SectionWrapper(Services,"Services")

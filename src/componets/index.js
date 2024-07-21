@@ -14,8 +14,9 @@ import LoginPage from './Login'
 import RegistrationPage from './register'
 import PageNotFound from './PageNotFound'
 import ResetPassword from './resetpassword'
+import ContactMe from './contact'
 
 import InteractiveGradient from './InteractiveGradient'
 
 
-export {About,Hero,Nav,FAQs,Footer,Number,Team,Project,Wedo,Services,ClientSlider,Path,LoginPage,RegistrationPage,PageNotFound,ResetPassword,InteractiveGradient} 
+export {About,Hero,Nav,FAQs,Footer,Number,Team,Project,Wedo,Services,ClientSlider,Path,LoginPage,RegistrationPage,PageNotFound,ResetPassword,InteractiveGradient,ContactMe} 

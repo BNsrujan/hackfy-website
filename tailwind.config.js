@@ -26,7 +26,6 @@ module.exports = {
         primarys: "rgb(237 28 36)",
         secondarys:"#002060",
         third : "#adb4d1",
-        
         // bg-opacity-20,
         blues:"#4aa5f0",
         border: "hsl(var(--border))",

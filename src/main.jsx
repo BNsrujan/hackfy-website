@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.scss';
+import './index.css';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import {
@@ -20,7 +20,8 @@ import {
   RegistrationPage,
   PageNotFound,
   ResetPassword,
-  InteractiveGradient
+  InteractiveGradient,
+  ContactMe
 } from "./componets";
 
 
@@ -39,7 +40,7 @@ import {
           <FAQs />
           <Number />
           <ClientSlider/>
-          {/* <InteractiveGradient/> */}
+          <ContactMe/>
       <Footer />
 
         </>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-
+import {arrow} from '../assets'
 const RegistrationPage = () => {
   const [formData, setFormData] = useState({
     fullName: '',
@@ -20,7 +20,7 @@ const RegistrationPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here, e.g., send data to the server
+    
     console.log(formData);
   };
 
@@ -31,6 +31,8 @@ const RegistrationPage = () => {
       transition={{ duration: 0.5 }}
       className="min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-gray-900 to-gray-800"
     >
+    <Link to='/' className=' absolute top-4 left-4 text-blue-700  hover:underline duration-300 hover:fill-red-800'> <img src={arrow} className='top-3 w-11' alt="" /></Link>
+
       <div className="bg-gray-900 p-8 rounded-lg shadow-md w-full max-w-md">
         <div className="text-center mb-6">
           <img src="logo.png" alt="Phylum" className="mx-auto h-12 w-auto" />
@@ -68,17 +70,16 @@ const RegistrationPage = () => {
               />
             </div>
             <div>
-              <label htmlFor="email" className="sr-only">Email address</label>
+              <label htmlFor="Phone" className="sr-only">Email address</label>
               <input
-                id="email"
-                name="email"
-                type="email"
-                autoComplete="email"
+                id="Phone"
+                name="phone"
+                type="phone"
                 required
                 value={formData.email}
                 onChange={handleInputChange}
                 className="appearance-none rounded-sm relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
-                placeholder="Email address"
+                placeholder="phone number"
               />
             </div>
             <div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-
+import {arrow} from '../assets'
 const LoginPage = () => {
   // State variables for email and password
   const [email, setEmail] = useState('');
@@ -27,6 +27,8 @@ const LoginPage = () => {
       transition={{ duration: 0.5 }}
       className="min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-gray-900 to-gray-800"
     >
+    <Link to='/' className=' absolute top-4 left-4 text-blue-700  hover:underline duration-300 hover:fill-red-800'> <img src={arrow} className='top-3 w-11' alt="" /></Link>
+
       <div className="bg-gray-900 p-8 rounded-lg shadow-md w-full max-w-md">
         <div className="text-center mb-6">
           <img src="logo.png" alt="Phylum" className="mx-auto h-12 w-auto" />
