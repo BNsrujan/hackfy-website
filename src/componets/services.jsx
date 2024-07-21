@@ -45,4 +45,4 @@ const Services = () => {
     </motion.div>
     </>
   );}
-export default SectionWrapper(Services,"Services")
+export default SectionWrapper(Services,"")

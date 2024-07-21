@@ -1,6 +1,7 @@
-import { navLinks } from "../constants";
+import { navLinkss } from "../constants";
 import { logo,  name, close, menu } from "@/assets";
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -37,7 +38,7 @@ const Nav = () => {
         </Link>
 
         <ul className="list-none font-bold hidden sm:flex flex-row justify-center items-center gap-4 md:gap-10">
-          {navLinks.map((link) => (
+          {navLinkss.map((link) => (
             <li
               key={link.id}
               className={`${
@@ -45,7 +46,7 @@ const Nav = () => {
               } hover:text-black text-sm md:text-base lg:text-lg font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
-              <a href={`${link.id}`}>{link.title}</a>
+              <NavLink to={`${link.id}`}>{link.title}</NavLink>
             </li>
           ))}
 
@@ -76,7 +77,7 @@ const Nav = () => {
                 className="p-6 absolute top-16 left-0 mx-2 my-2 min-w-[140px] z-10 rounded-xl bg-white shadow-lg"
               >
                 <ul className="list-none flex justify-end items-start flex-col gap-2 ">
-                  {navLinks.map((link) => (
+                  {navLinkss.map((link) => (
                     <li
                       key={link.id}
                       className={`${
@@ -90,7 +91,7 @@ const Nav = () => {
                       }}
                     >
                       
-                      <a href={`${link.id}`} className="  ">{link.title}</a>
+                      <NavLink to={`${link.id}`} className="  ">{link.title}</NavLink>
                     </li>
                   ))}
                 </ul>

@@ -52,6 +52,10 @@ import {
       element:<><Nav/><About/><Footer/></>
     },
     {
+      path:'/Contact',
+      element:<><Nav/><ContactMe/><Footer/></>
+    },
+    {
       path:'/services',
       element:<><Nav/><Services/><Footer/></>
     },

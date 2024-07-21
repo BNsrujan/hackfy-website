@@ -51,7 +51,7 @@ export const clients = [
     'https://via.placeholder.com/800x400/0000FF/FFFFFF?text=Slide+3'
   ];
 
-export const navLinks =[
+export const navLinkss =[
     {
         id:'home',
         tilte:"Home"
