@@ -10,17 +10,14 @@ import {
   FAQs,
   Footer,
   Number,
-  Team,
   Project,
-  Wedo,
+
   Services,
   ClientSlider,
-  Path,
   LoginPage,
   RegistrationPage,
   PageNotFound,
   ResetPassword,
-  InteractiveGradient,
   ContactMe
 } from "./componets";
 

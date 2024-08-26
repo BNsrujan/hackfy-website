@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import {arrow} from '../assets'
+import {arrow,logo} from '../assets'
 const LoginPage = () => {
   // State variables for email and password
   const [email, setEmail] = useState('');
@@ -31,7 +31,7 @@ const LoginPage = () => {
 
       <div className="bg-gray-900 p-8 rounded-lg shadow-md w-full max-w-md">
         <div className="text-center mb-6">
-          <img src="logo.png" alt="Phylum" className="mx-auto h-12 w-auto" />
+          <img src={logo} alt="Phylum" className="mx-auto h-12 w-auto" />
           <h2 className="mt-6 text-3xl font-extrabold text-white">Sign in</h2>
         </div>
         <form onSubmit={handleSubmit} className="space-y-6">
