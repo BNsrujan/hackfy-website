@@ -7,7 +7,7 @@ import React, { useState, useEffect } from 'react';
 
 const PageNotFound = () => {
   const calculateTimeLeft = () => {
-    const difference = +new Date('2024-08-01') - +new Date();
+    const difference = +new Date('2024-09-24') - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {

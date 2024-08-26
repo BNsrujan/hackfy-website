@@ -85,4 +85,4 @@ const ContactMe = () => {
   );
 };
 
-export default ContactMe;
+export default SectionWrapper(ContactMe,"Contact");

@@ -25,8 +25,11 @@ import Stare from './G.png'
 import image from "./image.webp"
 import arrow from './arrow.svg'
 
+import testimon from './testimoinals1.jpeg'
+import testimon1 from './testimoinals2.jpeg'
+import testimon2 from './testimonials.jpg'
 
 export  {logo,phone,play,roundarrow,profile,Youtube,facebook,github,image
-    ,insta,linkdin,search,sev1,sev2,sev3,tick,Stare,name,close,menu,message,arrow
+    ,insta,linkdin,search,sev1,sev2,sev3,tick,Stare,name,close,menu,message,arrow,testimon,testimon1,testimon2
 }
 

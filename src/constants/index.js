@@ -9,22 +9,24 @@ import {
     Youtube,
     search,
     sev2,
-    sev3
+    sev3,testimon,testimon1,testimon2
 } from "@/assets"
+
 
 
 export const clients = [
     {
       id: 1,
-      url: "https://randomuser.me/api/portraits/women/4.jpg",
+      url:testimon,
       alt: "Image 1",
-      name: "Srujan",
+      name: "hellow",
+      name: "hellow",
       work: "Cyber Security Specialist",
       testimonial: "The training provided was top-notch and helped me gain essential skills in cybersecurity. Highly recommend!"
     },
     {
       id: 2,
-      url: "https://randomuser.me/api/portraits/men/5.jpg",
+      url: testimon1,
       alt: "Image 2",
       name: "John Doe",
       work: "Security Analyst",
@@ -32,7 +34,7 @@ export const clients = [
     },
     {
       id: 3,
-      url: "https://randomuser.me/api/portraits/women/9.jpg",
+      url: testimon2,
       alt: "Image 3",
       name: "Jane Smith",
       work: "Network Security Engineer",
@@ -257,6 +259,10 @@ export const  footerQlink = [
         id:"blog",
         title:"Blog",
     },
+    {
+        id:"contact",
+        title:"Contact"
+    }
     
 ]
 
