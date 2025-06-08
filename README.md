@@ -1,9 +1,32 @@
-# React + Vite
+# Hackfy Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web application built with React, Vite, 
 
-Currently, two official plugins are available:
+## 🚀 Live Demo (the website has been updated since the phase one)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# hackfy-website
+Visit the live website: [Hackfy](https://hacfy.com/)
+
+
+## 🎥 Demo Video
+
+[Watch the demo video](https://github.com/BNsrujan/hackfy-website/public/video.mp4)
+
+![Demo Preview](https://github.com/BNsrujan/hackfy-website/public/image.mp4)
+
+## 🛠️ Tech Stack
+
+- React
+- Vite
+- Modern CSS
+- Interactive 3D Elements
+
+
+
+
+
+
+
+
+
+
+
