@@ -9,9 +9,9 @@ Visit the live website: [Hackfy](https://hacfy.com/)
 
 ## 🎥 Demo Video
 
-[Watch the demo video](https://github.com/BNsrujan/hackfy-website/public/video.mp4)
+[Watch the demo video](https://github.com/BNsrujan/hackfy-website/blob/main/public/video.mp4)
 
-![Demo Preview](https://github.com/BNsrujan/hackfy-website/public/image.mp4)
+![Demo Preview](https://github.com/BNsrujan/hackfy-website/blob/main/public/image.png)
 
 ## 🛠️ Tech Stack
 
